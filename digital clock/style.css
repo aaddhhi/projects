@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #1a1a2e;
+    color: white;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Container */
+.container {
+    margin-top: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    display: inline-block;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Clock Display */
+#clock {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 0px 0px 20px cyan;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Alarm Container */
+.alarm-container {
+    margin-top: 20px;
+}
+
+/* Buttons & Select Elements */
+select, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Alarm Buttons */
+button {
+    background-color: #ff5733;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff784f;
+    transform: scale(1.05);
+}
+
+/* Toggle Button */
+#toggleMode {
+    margin-top: 20px;
+    background: #00adb5;
+    color: white;
+}
+
+#toggleMode:hover {
+    background: #007d82;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.dark-mode .container {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode #clock {
+    text-shadow: 0px 0px 20px orange;
+}
+
+.dark-mode button {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode button:hover {
+    background-color: #444;
+}
+
+/* Clock Glow Animation */
+@keyframes glow {
+    from { text-shadow: 0px 0px 10px cyan; }
+    to { text-shadow: 0px 0px 20px cyan; }
+}
