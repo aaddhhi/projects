@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kidsschool-register</title>
+    <!--css file connected-->
+    <link rel="stylesheet" href="kidschool.css"/>
+    <!--js file connected-->
+    <script src="kidschool.js"></script>
+</head>
+<body>
+    <div class="mainframe">
+        <span class="error" id="error"></span>
+      <form id="form-register">
+        <div class="group-form">
+            <label for="" class="form-label">
+                Full Name <span class="label-text"><sup>*</sup>🧑‍🦱</span>
+
+            </label>
+            <input
+             type="text"
+             class="form-input"
+             name="fullname"
+             placeholder="enter your fulllname"
+             onchange="onChangeValue(event)"
+            
+             />
+        </div>
+
+        <div class="group-form">
+            <label for="" class="form-label">
+                email <span class="label-text"><sup>*</sup></span>
+                ✉️
+            </label>
+            <input
+             type="text"
+             class="form-input"
+             name="email"
+             placeholder="enter your email"
+             onchange="onChangeValue(event)"
+             />
+        </div>
+        <div class="group-form">
+            <label class="form-label">Password<span class="label-text"><sup>*</sup></span> 🔑</label>
+            <input type="password" name="password"
+            placeholder="enter the password"
+            class="form-input"
+            onchange="onChangeValue(event)"/>
+            <p>
+                <ul>
+                    <li>Min 8 character </li>
+                    <li>Atleast One Upper Case,oneLowercase,special Character</li>
+                </ul>
+                <progress id="prg" max="50" value=0></progress>
+            </p>
+        </div>
+        <div class="group-form">
+            <label for="" class="form-label">
+               Contact Number<span class="label-text"><sup>*</sup></span>
+               📞
+            </label>
+            <input
+             type="tel"
+             class="form-input"
+             name="contact"
+             placeholder="enter your contact number"
+            onchange="onChangeValue(event)"
+             />
+        
+            
+        </div>
+        <div  class="group-form">
+            <label>Male</label>
+            <input type="radio" name="gender" value="male"/>
+            <label>Female</label>
+            <input type="radio" name="gender" value="female"/>
+
+        </div>
+        <div class="group-form">
+            <select name="country" onchange="onChangeValue(event)">
+               
+                <option vlaue="India">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                 <option value="1" selected>Select your Country</option>
+                
+            </select>
+            <input type="file" name="image"/>
+        </div>
+        <div class="group-form">
+            
+            <input type="checkbox" name="term" value="term"/>
+            <label>
+                I agree the terms
+            </label>
+        </div>
+        <div class="group-form">
+            <button type="submit">
+                Submit
+            </button>
+        
+            
+        </div>
+      </form>
+    </div>
+</body>
+</html>
