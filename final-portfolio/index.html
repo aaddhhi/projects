@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--
+  PERSONAL PORTFOLIO — customization guide
+  ------------------------------------------------
+  1. Replace "Maya Chen" and all copy marked with 🔧 throughout this file.
+  2. Swap project entries in the #work section with your own (title, tags, links, description).
+  3. Update the experience timeline in #experience with your real roles.
+  4. Point the résumé button and social links to your real URLs.
+  5. Colors, type and motion are all defined in style.css — the palette lives at the top as CSS variables.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aadhi — Software Engineer</title>
+<meta name="description" content="Portfolio of Maya Chen, software engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- background precision grid -->
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="crosshair" id="crosshair" aria-hidden="true">
+    <div class="crosshair-h"></div>
+    <div class="crosshair-v"></div>
+  </div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-mark">{ Aadhi }</a>
+    <nav class="nav-links">
+      <a href="#work"><span class="mono">01</span> Work</a>
+      <a href="#about"><span class="mono">02</span> About</a>
+      <a href="#skills"><span class="mono">03</span> Skills</a>
+      <a href="#journey"><span class="mono">04</span> Education</a>
+      <a href="#contact"><span class="mono">05</span> Contact</a>
+    </nav>
+    <a href="#" class="btn btn-ghost nav-cta">Résumé ↗</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero-grid">
+      <div class="hero-inner">
+        <p class="eyebrow reveal-item">
+          <span class="status-dot"></span> Available for new opportunities — SOFTWARE ENGINEER
+        </p>
+        <h1 class="hero-title">
+          <span class="reveal-line"><span class="reveal-item">Aadhi</span><span class="reveal-item hero-cursor">_</span></span>
+          <!-- <span class="reveal-line"><span class="reveal-item">Chen</span><span class="reveal-item hero-cursor">_</span></span> -->
+        </h1>
+        <p class="hero-sub reveal-item">
+          I build precise, dependable interfaces — from a first sketch on a whiteboard to a
+          production system serving real users. Currently focused on distributed frontend
+          architecture and developer tooling.
+        </p>
+        <div class="hero-actions reveal-item">
+          <a href="#work" class="btn btn-primary">View work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <!-- 🔧 Replace assets/profile.jpg with your own photo. Recommended: a square
+           or 4:5 portrait, at least 800px on the short side, plain/simple background. -->
+      <div class="hero-photo reveal-item">
+        <div class="hero-photo-frame">
+          <img src="assets/profile.png" alt="Portrait of Maya Chen" onerror="this.closest('.hero-photo').classList.add('img-missing')">
+          <span class="frame-corner corner-tl"></span>
+          <span class="frame-corner corner-tr"></span>
+          <span class="frame-corner corner-bl"></span>
+          <span class="frame-corner corner-br"></span>
+        </div>
+        <p class="mono hero-photo-caption">FIG. 01 — M. CHEN</p>
+      </div>
+    </div>
+
+    <div class="hero-coords mono" aria-hidden="true">
+      <span id="coordX">X 000</span><span id="coordY">Y 000</span>
+    </div>
+    <a href="#work" class="scroll-cue" aria-label="Scroll to work">
+      <span class="mono">SCROLL</span>
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ================= ABOUT (README) ================= -->
+  <section class="section" id="about">
+    <p class="section-eyebrow mono">02 / ABOUT</p>
+    <div class="readme">
+      <div class="readme-tab">
+        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+        <span class="mono readme-filename">README.md</span>
+      </div>
+      <div class="readme-body">
+        <div class="readme-copy">
+          <h2>Hi, I'm Aadhi.</h2>
+          <p>
+          Hi, I'm Aadhithyan, a Computer Science and Engineering graduate with a strong passion for building modern, user-friendly web applications. I enjoy transforming ideas into responsive and interactive digital experiences using technologies like HTML, CSS, JavaScript, React, Tailwind CSS, and Bootstrap.
+          </p>
+          <p>
+          Beyond coding, I'm always eager to learn new technologies, take on challenging projects, and collaborate with others. My goal is to begin my career as a software developer where I can contribute, grow as an engineer, and build impactful products.
+          </p>
+        </div>
+        <dl class="readme-meta mono">
+          <div><dt>LOCATION</dt><dd>KERALA</dd></div>
+          <div><dt>FOCUS</dt><dd>Frontend architecture</dd></div>
+          <div><dt>STACK</dt><dd>HTML · CSS · JAVASCRIPT · React ·JAVA</dd></div>
+          <div><dt>EXPERIENCE</dt><dd>FRESHER</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section" id="skills">
+    <p class="section-eyebrow mono">03 / SKILLS</p>
+    <h2 class="section-title">Tools of the trade</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3 class="mono">Languages</h3>
+        <div class="tags">
+          <span>JavaScript</span><span>Java</span> 
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="mono">Frameworks &amp; Libraries</h3>
+        <div class="tags">
+          <span>React</span><span>Bootstrap</span><span>Node.js</span><span>Express</span><span>Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="mono">Tools &amp; Platforms</h3>
+        <div class="tags">
+          <span>Git</span><span>Docker</span><span>AWS</span><span>PostgreSQL</span><span>Figma</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WORK ================= -->
+  <section class="section" id="work">
+    <p class="section-eyebrow mono">01 / WORK</p>
+    <h2 class="section-title">Selected projects</h2>
+
+    <div class="projects">
+      <article class="project-card">
+        <div class="project-top">
+          <span class="mono project-index">proj/01</span>
+          <div class="project-links">
+            <a href="https://weather-api-1-t4oz.onrender.com" aria-label="Live site">Live ↗</a>
+            <a href="https://github.com/aaddhhi/weather-api" aria-label="Source code">Code ↗</a>
+          </div>
+        </div>
+        <h3>Weather-API</h3>
+        <p>A real-time collaborative diagramming tool for weather detection, built to handle
+          any weather conditions.Fetched the datas with open API'S.</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="mono project-index">proj/02</span>
+          <div class="project-links">
+            <a href="https://postal-woad.vercel.app/" aria-label="Live site">Live ↗</a>
+            <a href="https://github.com/aaddhhi/postal" aria-label="Source code">Code ↗</a>
+          </div>
+        </div>
+        <h3>Postal-API</h3>
+        <p>A budgeting API and dashboard for freelancers, processing bank-feed data for
+          12,000+ users. Designed the reconciliation pipeline and cut average sync time
+          from 40s to 3s.</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="mono project-index">proj/03</span>
+          <div class="project-links">
+            <a href="https://snake-o9s2.onrender.com" aria-label="Live site">Live ↗</a>
+            <a href="https://github.com/aaddhhi/snake" aria-label="Source code">Code ↗</a>
+          </div>
+        </div>
+        <h3>Snake Game</h3>
+        <p>An open-source command-line tool that generates changelogs from conventional
+          commits and opens release PRs automatically. Adopted by a handful of mid-size
+          open-source projects.</p>
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="mono project-index">proj/04</span>
+          <div class="project-links">
+            <a href="https://lungtumor-2nyma2tigfs6hzwrgrdnrx.streamlit.app/" aria-label="Live site">Live ↗</a>
+            <a href="https://github.com/aaddhhi/lung_tumor" aria-label="Source code">Code ↗</a>
+          </div>
+        </div>
+        <h3>Brain-Tumor-Detector</h3>
+        <p>An internal design-system playground that lets designers and engineers preview
+          component states side-by-side before a line of production code is written.</p>
+        <div class="tags">
+          <span>Python</span><span>Streamlit</span><span>Unet</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+<!-- ================= EDUCATION & JOURNEY =================
+     🔧 Lead with your degree, then use the remaining entries for real
+     momentum: internships (even short ones), hackathons, open-source
+     contributions, certifications — whatever shows you moving forward. -->
+<section class="section" id="journey">
+  <p class="section-eyebrow mono">04 / EDUCATION &amp; JOURNEY</p>
+  <h2 class="section-title">Where I'm coming from</h2>
+
+  <div class="timeline">
+    <div class="timeline-line" aria-hidden="true"></div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <p class="mono timeline-date">2022 — 2026</p>
+        <h3>B.Tech in Computer Science, [KPRIET]</h3>
+        <p>Coursework in data structures, operating systems, and web development.
+          Capstone project: a real-time collaborative diagramming tool built with
+          React and WebSockets — see <a href="#work" style="color: var(--accent);">Flowline</a> above.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <p class="mono timeline-date">2026-Present</p>
+        <h3>MERN Stack Intern, [Camerin Innovate Pvt Ltd]</h3>
+        <p>Eight-week internship shipping two customer-facing features and fixing a
+          backlog of accessibility issues across the main dashboard. First real
+          experience working inside someone else's codebase and review process.</p>
+      </div>
+    </div>
+
+    <!-- <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <p class="mono timeline-date">2024</p>
+        <h3>1st Place, [Hackathon Name]</h3>
+        <p>Built a working prototype in 24 hours with a team of three. Led the
+          frontend and integration work under a hard deadline — a good proxy for
+          how I handle pressure and ambiguous scope.</p>
+      </div>
+    </div> -->
+
+  </div>
+</section>
+
+  <!-- ================= CONTACT / FOOTER ================= -->
+  <footer class="footer" id="contact">
+    <div class="titleblock">
+      <div class="titleblock-main">
+        <p class="section-eyebrow mono">05 / CONTACT</p>
+        <h2 class="section-title">Let's build something precise.</h2>
+        <p class="footer-copy">
+          I'm currently open to frontend and full-stack roles, and select freelance
+          engagements. The fastest way to reach me is email.
+        </p>
+        <a href="mailto:aadhiashok123@gmail.com" class="btn btn-primary footer-email">
+          aadhiashok123@gmail.com ↗
+        </a>
+      </div>
+      <div class="titleblock-meta mono">
+        <div><dt>GITHUB</dt><a href="https://github.com/aaddhhi">github.com/aadhi</a></div>
+        <div><dt>LINKEDIN</dt><a href="https://www.linkedin.com/in/aadithyan-p-a-254b04265/">linkedin.com/in/aadhi</a></div>
+        <div><dt>LOCATION</dt><span>Palakkad,KERALA</span></div>
+        <div><dt>REV</dt><span id="footerYear"></span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= STATUS BAR ================= -->
+  <div class="statusbar mono" id="statusbar">
+    <span id="statSection">§ TOP</span>
+    <span id="statScroll">SCROLL 0%</span>
+    <span id="statCoord">X 000 · Y 000</span>
+    <span id="statTime"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
